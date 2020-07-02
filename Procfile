@@ -1,2 +1,2 @@
 release: python manage.py migrate
-api: gunicorn trackapi.wsgi --log-file -
+web: gunicorn trackapi.wsgi --log-file -
