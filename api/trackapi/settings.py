@@ -142,7 +142,7 @@ AUTH_USER_MODEL = 'core.User'
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://trackapp-website.herokuapp.com/",
+    "https://trackapp-website.herokuapp.com",
 ]
 
 CSRF_COOKIE_SECURE = False
@@ -150,7 +150,7 @@ CSRF_COOKIE_SECURE = False
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     'http://127.0.0.1:3000/',
-    "https://trackapp-website.herokuapp.com/",
+    "https://trackapp-website.herokuapp.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
