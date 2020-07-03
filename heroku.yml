@@ -1,0 +1,11 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+build:
+  docker:
+    web: Dockerfile
+  release:
+    image: api
+
+run:
+  web: gunicorn trackapi.wsgi
