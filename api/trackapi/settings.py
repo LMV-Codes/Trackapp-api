@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ws@%#is@7oh*f+ji^olsu&l%f5-*ls2x)b5efd@@l*xp0@ha!*'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -142,6 +142,7 @@ AUTH_USER_MODEL = 'core.User'
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://trackapp-website.herokuapp.com/",
 ]
 
 CSRF_COOKIE_SECURE = False
@@ -149,6 +150,7 @@ CSRF_COOKIE_SECURE = False
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     'http://127.0.0.1:3000/',
+    "https://trackapp-website.herokuapp.com/",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
