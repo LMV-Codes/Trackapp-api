@@ -1,1 +1,1 @@
-web: gunicorn website:trackapi
+web: gunicorn trackapi:trackapi
