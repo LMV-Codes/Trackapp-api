@@ -14,7 +14,7 @@ services:
       gunicorn trackapi.wsgi -b 0.0.0.0:8000"
     environment:
       - SECRET_KEY=ws@%#is@7oh*f+ji^olsu&l%f5-*ls2x)b5efd@@l*xp0@ha!*
-      - DEBUG=0
+      - DEBUG=1
       - DB_HOST=db
       - DB_NAME=trackerapi
       - DB_USER=trackerapi
