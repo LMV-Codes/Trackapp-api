@@ -4,8 +4,8 @@ setup:
 build:
   docker:
     web: Dockerfile
-  release:
-    image: api
+release:
+  image: api
 
 run:
   web: gunicorn trackapi.wsgi
