@@ -1,0 +1,1 @@
+web: gunicorn --trackapi trackapi.wsgi --log-file -
