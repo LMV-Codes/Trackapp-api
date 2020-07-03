@@ -1,1 +1,1 @@
-web: gunicorn trackapi.wsgi --log-file -
+web: gunicorn dj-trackapi.wsgi --log-file -
